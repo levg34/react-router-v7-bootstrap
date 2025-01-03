@@ -9,14 +9,12 @@ import {
 
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
+import bootstrapCss from "bootstrap/dist/css/bootstrap.min.css?url";
 
 export const links: Route.LinksFunction = () => [
   {
     rel: "stylesheet",
-    href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css",
-    integrity:
-      "sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN",
-    crossorigin: "anonymous",
+    href: bootstrapCss,
   },
   { rel: "stylesheet", href: stylesheet },
 ];
